@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical" android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/floatingActionButton3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"-->
+<!--            app:srcCompat="@android:drawable/ic_menu_add" />-->
+<!--    </LinearLayout>-->
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <TextView
+            android:id="@+id/createtasknameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Task"
+            android:textAlignment="center"/>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/addnewsubtasktaskdateid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="+ (Add New Subtask)"-->
+<!--        />-->
+    <Button
+        android:id="@+id/newtaskdateid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        />
+
+        <EditText
+            android:id="@+id/newtasknameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Task Name" />
+
+        <EditText
+            android:id="@+id/newtaskdescriptionid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Task Description" />
+
+
+
+        <Button
+            android:id="@+id/newtasksaveid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE" />
+
+<!--        <Button-->
+<!--            android:id="@+id/newtaskdeleteid"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="DELETE" />-->
+
+        <Button
+            android:id="@+id/newtaskbackid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK" />
+
+    </LinearLayout>

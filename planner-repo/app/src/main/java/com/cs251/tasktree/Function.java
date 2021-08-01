@@ -1,0 +1,31 @@
+package com.cs251.tasktree;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
+
+public class Function {
+
+    public static String Epoch2DateString(String epochSeconds, String formatString) {
+        if (epochSeconds != "0") {
+            Date updatedate = new Date(Long.parseLong(epochSeconds));
+            SimpleDateFormat format = new SimpleDateFormat(formatString);
+            return format.format(updatedate);
+        }else{
+            return epochSeconds;
+        }
+    }
+
+
+
+    public static Calendar Epoch2Calender(String epochSeconds) {
+        Date updatedate = new Date(Long.parseLong(epochSeconds));
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(updatedate);
+
+        return cal;
+    }
+
+}
